@@ -1,5 +1,7 @@
 package com.david.example;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class OrderDto {
     private String productName;
     private String customerName;
