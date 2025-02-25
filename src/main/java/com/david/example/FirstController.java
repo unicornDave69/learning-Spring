@@ -1,5 +1,7 @@
 package com.david.example;
 
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
@@ -24,6 +26,7 @@ public class FirstController {
 
         return "Request is ok and order is: " + order.toString();
     }
+
 
     @PostMapping("/post-order-record")
     public String post(@RequestBody OrderRecord order ) {
