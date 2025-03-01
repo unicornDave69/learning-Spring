@@ -1,11 +1,21 @@
 package com.david.example;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Student {
+    @Id
     private Integer id;
+
     private String name;
+
     private String surname;
+
     private String lastname;
+
     private String email;
+
     private Integer age;
 
     public Student(String name, String surname, String lastname, String email, Integer age) {
